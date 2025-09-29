@@ -1,0 +1,37 @@
+@use 'variables';
+
+$primary-gradient: linear-gradient(90deg, #FFFFFF00 0%, #0A0A0A00 0%, #04040469 41%, #000000 100%);
+
+.home-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 43px;
+    padding: 20px;
+    max-width: 1340px;
+    margin: 0 auto;
+}
+
+.property-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 60px;
+    width: 100%;
+    max-width: 1240px;
+    background-color: $primary-gradient;
+    border-radius: 25px;
+    padding: 56px 50px 43px 50px;
+    
+    @media (max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 40px;
+        padding: 40px 30px;
+    }
+    
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+        background-color: transparent;
+    }
+}

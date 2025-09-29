@@ -1,0 +1,9 @@
+@use "variables" as var;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: var.$background-color;
+}
