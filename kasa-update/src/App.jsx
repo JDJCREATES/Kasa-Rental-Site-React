@@ -1,11 +1,16 @@
-import './App.css'
-import './styles/main.scss';
+import Header from './components/Header';
+import Footer from './components/Footer';
+
+import AppRouter from './AppRouter';
+
 function App() {
 
 
   return (
     <>
-     <KasaManager />
+      <Header />
+        <AppRouter />
+      <Footer />
     </>
   )
 }
