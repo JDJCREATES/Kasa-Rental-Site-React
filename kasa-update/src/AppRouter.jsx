@@ -8,14 +8,14 @@ import NotFound from './pages/NotFound';
 export default function AppRouter() {
   return (
     <Router>
-      <Layout>
+      
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/update" element={<Update />} />
-          <Route path="/settings" element={<Settings />} />
+          <Route path="/about" element={<About />} />
+         
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </Layout>
+      
     </Router>
   );
 }
