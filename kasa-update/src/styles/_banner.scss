@@ -1,0 +1,11 @@
+@use 'variables';
+
+.banner-container {
+  background-color: variables.$primary-color;
+  padding: 1rem;
+}
+
+.banner-image {
+  max-width: 100%;
+  height: auto;
+}
